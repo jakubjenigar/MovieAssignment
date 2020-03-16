@@ -9,28 +9,36 @@
     min-width: 300px;
   }
 
-  mat-card-title,
+  mat-card-title{
+    display: flex;
+    justify-content: center;
+    background-color: #202c39;
+    color: white;
+  }
   mat-card-content {
     display: flex;
     justify-content: center;
     background-color: #202c39;
-    color: rgb(41, 158, 212);
+    color: #299ed4;
   }
   mat-card{
       background-color: #202c39;
   }
 
-  .mat-input-element {
-    caret-color: #3a7fb7;
+.mat-input-element {
+    caret-color: #299ed4;
 }
+
+
 ::ng-deep.mat-form-field-ripple {
     /*change color of underline when focused*/
-    background-color: rgb(41, 158, 212) !important;;
+    background-color: #299ed4 !important;;
    }
 
-   ::ng-deep .mat-focused .mat-form-field-label {
+::ng-deep  .mat-form-field-label {
     /*change color of label*/
-    color: rgb(41, 158, 212) !important;;
+    color: white !important;
+    font: inherit;
    }
 
   .error {
