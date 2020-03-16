@@ -1,0 +1,15 @@
+<h2>Series</h2>
+  
+ 
+
+  <div class="grid">
+
+
+    <mat-grid-list cols="3" rowHeight="1:1" gutterSize="20px">
+      <div *ngFor="let tvshow of tvshows">
+        <mat-grid-tile>
+        <app-movie [data]="tvshow"></app-movie>
+      </mat-grid-tile>
+      </div>
+    </mat-grid-list>
+    </div>
