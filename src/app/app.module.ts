@@ -17,6 +17,9 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HomeComponent} from './home/home.component'
 import {MatInputModule} from '@angular/material/input'; 
 import { LoginComponent } from './login/login.component';
+import{SignupComponent} from './signup/signup.component';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 
 import {MatGridListModule} from '@angular/material/grid-list'; 
@@ -30,7 +33,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     TvshowsComponent,
     TabBarNav,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    SignupComponent
     
     
     
