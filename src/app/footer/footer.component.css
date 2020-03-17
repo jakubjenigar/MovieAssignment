@@ -2,7 +2,10 @@
   background-color: #273544;
   opacity: 1;
   height: 50px;
-  margin-top: 30px;
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer-copyright, .contact-us {
