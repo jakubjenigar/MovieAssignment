@@ -2,12 +2,38 @@
   display: block;
   position: relative;
   max-width: 500px;
-  max-height: 530px;
-  min-height: 450px;
   background-color: #202c39;
 }
 
-.mat-card-image {
+
+
+mat-card-title{
+  display: flex;
+  justify-content: left;
+  background-color: #202c39;
+  color: white;
+  font-size: 23px;
+  
+}
+mat-card-content {
+  display: flex;
+  justify-content: left;
+  background-color: #202c39;
+  color: white;
+  text-align: justify;
+  font-size: 12pt;
+}
+mat-card{
+    background-color: #202c39;
+    border-radius: 10px;
+}
+
+.mat-card-subtitle {
+  font-size: 18pt;
+  color: #80b5dd;
+} 
+
+.mat-card-image{
   object-fit: cover;
   max-width: 500px;
   max-height: 250px;
@@ -16,30 +42,17 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-
+  border-radius: 10px;
 }
-
-.mat-card-title {
-  font-size: 23px;
-  color: white;
-}
-
-.mat-card-subtitle {
-  font-size: 18pt;
-  color: #8da1b7;
-}
-
-.mat-card-content {
-  font-size: 12pt;
-  text-align: justify;
-  color: #8da1b7;
-}
-
-
 .mat-button {
-  color: #59a3f2;
+  color: #80b5dd;
+  justify-content: flex-end;
+  font-size: 12pt;
 }
 
 p {
   height: 50px;
 }
+
+
+

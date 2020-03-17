@@ -1,57 +1,58 @@
 :host {
-    display: flex;
-    justify-content: center;
-    margin: 100px 0px;
-  }
+  display: flex;
+  justify-content: left;
+  margin: 100px 50px;
+}
 
-  .mat-form-field {
-    width: 100%;
-    min-width: 300px;
-  }
+.mat-form-field {
+  width: 100%;
+  min-width: 300px;
+}
 
-  mat-card-title{
-    display: flex;
-    justify-content: center;
+mat-card-title{
+  display: flex;
+  justify-content: left;
+  background-color: #202c39;
+  color: white;
+}
+mat-card-content {
+  display: flex;
+  justify-content: center;
+  background-color: #202c39;
+  color: #80b5dd;
+}
+mat-card{
     background-color: #202c39;
-    color: white;
-  }
-  mat-card-content {
-    display: flex;
-    justify-content: center;
-    background-color: #202c39;
-    color: #299ed4;
-  }
-  mat-card{
-      background-color: #202c39;
-  }
+    border-radius: 10px;
+}
 
 .mat-input-element {
-    caret-color: #299ed4;
+  caret-color: #80b5dd;
 }
 
 
 ::ng-deep.mat-form-field-ripple {
-    /*change color of underline when focused*/
-    background-color: #299ed4 !important;;
-   }
+  /*change color of underline when focused*/
+  background-color: #80b5dd !important;;
+ }
 
 ::ng-deep  .mat-form-field-label {
-    /*change color of label*/
-    color: white !important;
-    font: inherit;
-   }
-   /* Change label color on focused */
+  /*change color of label*/
+  color: white !important;
+  font: inherit;
+ }
+ /* Change label color on focused */
 ::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
-  color: #299ed4 !important;
+color: #80b5dd !important;
 }
-  .error {
-    padding: 16px;
-    width: 300px;
-    color: white;
-    background-color: red;
-  }
+.error {
+  padding: 16px;
+  width: 300px;
+  color: white;
+  background-color: red;
+}
 
-  .button {
-    display: flex;
-    justify-content: flex-end;
-  }
+.button {
+  display: flex;
+  justify-content: flex-end;
+}

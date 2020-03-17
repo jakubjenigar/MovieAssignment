@@ -1,11 +1,12 @@
 .page-footer {
-  background-color: #273544;
+  background-color: rgb(9, 32, 62,0);
   opacity: 1;
   height: 50px;
 
   position: absolute;
   bottom: 0;
   width: 100%;
+ 
 }
 
 .footer-copyright, .contact-us {
