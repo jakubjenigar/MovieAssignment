@@ -1,10 +1,13 @@
 .grid {
   overflow: auto;
+ 
 }
 .mat-grid-list {
   overflow: auto;
   max-height: 480px;
   margin-bottom: 50px;
+  
+
 }
 
 h2 {
