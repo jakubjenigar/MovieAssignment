@@ -1,11 +1,12 @@
-img{
-    display: block;
+img {
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 20%;
 }
 
-input{
-align-items: center;
-text-align: center;
+input {
+  align-items: center;
+  text-align: center;
 }
+

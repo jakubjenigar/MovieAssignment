@@ -1,14 +1,11 @@
-.grid{
-    overflow: auto;
-    
-    
+.grid {
+  overflow: auto;
 }
-.mat-grid-list{
-    
-    overflow: auto;
-    max-height: 480px;
+.mat-grid-list {
+  overflow: auto;
+  max-height: 480px;
 }
 
-h2{
-    text-align: center;
+h2 {
+  text-align: center;
 }
