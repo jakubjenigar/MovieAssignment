@@ -3,7 +3,7 @@
   position: relative;
   max-width: 500px;
   background-color: #202c39;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 mat-card-title {
