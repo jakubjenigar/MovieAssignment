@@ -1,4 +1,5 @@
 import {Component, ViewEncapsulation} from '@angular/core';
+import { Router } from '@angular/router';
 
 /**
  * @title Basic use of the tab group
@@ -9,4 +10,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
   styleUrls: ['tabbar.component.css'],
   encapsulation: ViewEncapsulation.None
 })
-export class TabBarNav {}
+export class TabBarNav {
+
+  constructor(private router: Router) {}
+}

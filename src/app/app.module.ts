@@ -10,28 +10,38 @@ import { MovieComponent } from './movie/movie.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TvshowsComponent } from './tvshows/tvshows.component';
 import { MatTabsModule } from '@angular/material/tabs';
-import { TabBarNav} from './tabBar/tabbar.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HomeComponent } from './home/home.component';
+
 import { MatInputModule } from '@angular/material/input';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { FooterComponent } from './footer/footer.component';
+import { MenuComponent } from './navbar/menu/menu.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { ToolbarComponent} from './navbar/toolbar/toolbar.component'
+import {AppRoutingModule, routingComponents} from './app-routing.module';
+import { OverflowMenuComponent } from './navbar/overflow-menu/overflow-menu.component'
+
+
+// import { HomeComponent } from './home/home.component';
+// import { TabBarNav} from './tabBar/tabbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    routingComponents,
     MoviesComponent,
     MovieComponent,
     TvshowsComponent,
-    TabBarNav,
-    HomeComponent,
     LoginComponent,
     SignupComponent,
-    FooterComponent
+    FooterComponent,
+    MenuComponent,
+    ToolbarComponent,
+    OverflowMenuComponent
   ],
   imports: [
     BrowserModule,
@@ -47,6 +57,9 @@ import { FooterComponent } from './footer/footer.component';
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
+    MatToolbarModule,
+    AppRoutingModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
