@@ -1,0 +1,29 @@
+.mat-menu-item {
+    color: #fff ;
+  }
+  .mat-menu-item.mat-icon:hover {
+    color: #121212; ;
+  }
+  
+  button.mat-menu-item{
+      background-color: #212121;
+  }
+  
+  button.mat-menu-item:hover {
+      background-color: #B2EBF2;
+      color: #212121;
+  }
+
+::ng-deep .mat-menu-content{
+    background-color: #212121
+
+}
+
+
+.menu-icon{
+    color: #0097A7;
+}
+
+.menu-icon:hover{
+    color: #121212;;
+}
