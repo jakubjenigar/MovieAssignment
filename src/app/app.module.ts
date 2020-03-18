@@ -17,10 +17,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { MatInputModule } from '@angular/material/input';
 import { LoginComponent } from './login/login.component';
-import {SignupComponent} from './signup/signup.component';
-import {MatGridListModule} from '@angular/material/grid-list';
+import { SignupComponent } from './signup/signup.component';
+import { MatGridListModule } from '@angular/material/grid-list';
 import { FooterComponent } from './footer/footer.component';
-
 
 @NgModule({
   declarations: [

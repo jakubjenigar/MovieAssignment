@@ -1,6 +1,5 @@
 import { Input, Component, Output, EventEmitter } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
-
 @Component({
   selector: 'loginForm',
   templateUrl: 'login.component.html',
@@ -8,6 +7,8 @@ import { FormGroup, FormControl } from '@angular/forms';
 
 })
 export class LoginComponent {
+  constructor( ) {}
+
   form: FormGroup = new FormGroup({
     username: new FormControl(''),
     password: new FormControl(''),
@@ -18,7 +19,9 @@ export class LoginComponent {
       this.submitEM.emit(this.form.value);
     }
   }
+
   @Input() error: string | null;
 
   @Output() submitEM = new EventEmitter();
+
 }

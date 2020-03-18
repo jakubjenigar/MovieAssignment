@@ -3,19 +3,17 @@
   position: relative;
   max-width: 500px;
   background-color: #202c39;
-  
+  border-radius: 15px;
 }
 
-
-
-mat-card-title{
+mat-card-title {
   display: flex;
   justify-content: left;
   background-color: #202c39;
   color: white;
   font-size: 23px;
-  
 }
+
 mat-card-content {
   display: flex;
   justify-content: left;
@@ -24,17 +22,18 @@ mat-card-content {
   text-align: justify;
   font-size: 12pt;
 }
-mat-card{
-    background-color: #202c39;
-    border-radius: 10px;
-}
+
+/* mat-card {
+  background-color: #202c39;
+  border-radius: 10px;
+} */
 
 .mat-card-subtitle {
   font-size: 18pt;
   color: #80b5dd;
-} 
+}
 
-.mat-card-image{
+.mat-card-image {
   object-fit: cover;
   max-width: 500px;
   max-height: 250px;
@@ -45,6 +44,7 @@ mat-card{
   margin-right: auto;
   border-radius: 10px;
 }
+
 .mat-button {
   color: #80b5dd;
   justify-content: flex-end;
@@ -52,8 +52,5 @@ mat-card{
 }
 
 p {
-  height: 50px;
+  height: 30px;
 }
-
-
-
