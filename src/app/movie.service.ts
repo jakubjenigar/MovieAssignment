@@ -18,7 +18,7 @@ export class MovieService {
       {
         title: 'Skyscaper',
         genre: 'Action',
-        photo: 'https://nextgen.yourhub.com/wp-content/uploads/2018/07/200x200.png',
+        photo: 'https://i0.wp.com/thecurvyfilmcritic.com/wp-content/uploads/2018/07/1ieTJ6Ajy94hz3E7LogEKtQ.jpeg?fit=848%2C477&ssl=1',
         trailer: 'youtube.com/watch?v=t9QePUT-Yt8&t=21s',
         description: 'A security expert must infiltrate a burning skyscraper, 225 stories above ground, when his family is trapped inside by criminals.'
       }
