@@ -1,24 +1,21 @@
 <div fxLayout="row wrap">
 
 <mat-card class="cardItem">
-  <mat-card-header>
     <mat-card-title> {{ data.title }} </mat-card-title>
     <mat-card-subtitle> {{ data.genre }} </mat-card-subtitle>
-  </mat-card-header>
 
-  <img mat-card-image src="{{data.photo}}" class="image">
+  <img mat-card-image src="{{data.photo}}"
+  class="image"
+  style="width: 100%; height: 100%; max-width: 500px; max-height: 250px;">
 
   <mat-card-content>
-    <div id="description">
       Description:
-    <p>
+    <br>
      {{ data.description }}
-    </p>
-  </div>
   </mat-card-content>
 
    <mat-card-actions>
-      <button mat-button>Watch</button>
+      <button mat-button>Watch </button>
           <button mat-button><i class="material-icons">
         share
         </i></button>

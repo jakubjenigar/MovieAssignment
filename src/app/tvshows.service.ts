@@ -18,7 +18,7 @@ export class TvShowsService {
       {
         title: 'Riverdale',
         genre: 'Mystery',
-        photo: 'https://trendingnewsbuzz.com/wp-content/uploads/2019/11/river1-2.jpg',
+        photo: 'https://img.purch.com/o/aHR0cDovL3d3dy5uZXdzYXJhbWEuY29tL2ltYWdlcy9pLzAwMC8yMTAvMzk5L2kwMi9ETGFvbmg3VUVBQVFGc2QuanBn',
         trailer: 'https://www.youtube.com/watch?v=HxtLlByaYTc&t=14s',
         description: 'A group of teens tackle being teenagers in a town that is rife with sinister happenings and blood-thirsty criminals.'
       },
