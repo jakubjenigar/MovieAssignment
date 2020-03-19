@@ -1,6 +1,10 @@
 import { Input, Component, Output, EventEmitter, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
+<<<<<<< HEAD
 import { SignupComponent } from '../signup/signup.component';
+=======
+import {Router} from '@angular/router';
+>>>>>>> master
 @Component({
   selector: 'loginForm',
   templateUrl: 'login.component.html',
@@ -8,6 +12,7 @@ import { SignupComponent } from '../signup/signup.component';
 
 })
 export class LoginComponent {
+<<<<<<< HEAD
 
 
  public function ;submit () {
@@ -19,6 +24,12 @@ export class LoginComponent {
 
  }
   constructor( ) {}
+=======
+  username: string;
+  password: string;
+
+  constructor( private router: Router ) {}
+>>>>>>> master
 
   form: FormGroup = new FormGroup({
     username: new FormControl(''),
@@ -26,6 +37,14 @@ export class LoginComponent {
   });
 
  
+
+  login(): void {
+    if (this.username === 'admin' && this.password === '1234') {
+     this.router.navigate(['browse']);
+    } else {
+      alert('Invalid credentials');
+    }
+  }
 
   @Input() error: string | null;
 

@@ -15,10 +15,6 @@ const appRoutes: Routes = [
   { path: 'movies', component: MoviesComponent}
 ];
 
-
-
-
-
 @NgModule({
 
   imports: [RouterModule.forRoot(appRoutes)],

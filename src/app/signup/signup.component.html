@@ -4,37 +4,59 @@
 <form [formGroup]="form" (ngSubmit)="submit()">
   <p>
     <mat-form-field>
+<<<<<<< HEAD
       <input [(ngModel)]="username" matInput placeholder="Username" formControlName="username">
+=======
+      <input type="text"
+      matInput placeholder="Username"
+      id="username"
+      [(ngModel)]="username"
+      formControlName="username">
+>>>>>>> master
     </mat-form-field>
   </p>
 
   <p>
     <mat-form-field>
+<<<<<<< HEAD
       <input [(ngModel)]="password" matInput placeholder="Password" formControlName="password">
+=======
+      <input type="password"
+       matInput placeholder="Password"
+       id="password"
+       [(ngModel)]="password"
+       formControlName="password">
+>>>>>>> master
     </mat-form-field>
   </p>
 
   <p>
     <mat-form-field>
-      <input type="email" matInput placeholder="Email" formControlName="email">
+      <input type="email"
+      matInput placeholder="Email"
+      id="email"
+      [(ngModel)]="email"
+      formControlName="email">
     </mat-form-field>
   </p>
 
   <p>
     <mat-form-field>
-      <input type="date" matInput placeholder="Date of Birth" formControlName="date">
+      <input type="date"
+      matInput placeholder="Date of Birth"
+      id="birthDate"
+      [(ngModel)]="birthDate"
+      formControlName="date">
     </mat-form-field>
   </p>
-
 
 
   <p *ngIf="error" class="error">
     {{ error }}
   </p>
 
-
   <div class="button">
-    <button type="submit" mat-button>Sign Up</button>
+    <button type="submit" mat-button (click)="signup()">Sign Up</button>
 
   </div>
 

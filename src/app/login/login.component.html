@@ -4,13 +4,27 @@
 <form [formGroup]="form" (ngSubmit)="submit()">
   <p>
     <mat-form-field>
+<<<<<<< HEAD
       <input [(ngModel)]="username" matInput placeholder="Username" formControlName="username">
+=======
+      <input type="text" matInput
+      placeholder="Username"
+      [(ngModel)]="username"
+      formControlName="username">
+>>>>>>> master
     </mat-form-field>
   </p>
 
   <p>
     <mat-form-field>
+<<<<<<< HEAD
       <input [(ngModel)]="password" matInput placeholder="Password" formControlName="password">
+=======
+      <input type="password"
+      matInput placeholder="Password"
+      [(ngModel)]="password"
+      formControlName="password">
+>>>>>>> master
     </mat-form-field>
   </p>
 
@@ -19,8 +33,12 @@
   </p>
 
   <div class="button">
+    <button type="submit" mat-button (click)="login()">Login</button>
     <button type="submit" mat-button routerLink="/sign_up">Sign Up</button>
+<<<<<<< HEAD
     <button *ngIf="condition" [routerLink] ="/movies">Login</button>
+=======
+>>>>>>> master
   </div>
 
 </form>
