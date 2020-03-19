@@ -1,5 +1,6 @@
-import { Input, Component, Output, EventEmitter } from '@angular/core';
+import { Input, Component, Output, EventEmitter, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
+import { SignupComponent } from '../signup/signup.component';
 @Component({
   selector: 'loginForm',
   templateUrl: 'login.component.html',
@@ -7,6 +8,16 @@ import { FormGroup, FormControl } from '@angular/forms';
 
 })
 export class LoginComponent {
+
+
+ public function ;submit () {
+ console.log('User Name: ' + SignupComponent.username);
+ console.log('Password: ' + SignupComponent.password);
+ if (this.form.valid) {
+  this.submitEM.emit(this.form.value);
+}
+
+ }
   constructor( ) {}
 
   form: FormGroup = new FormGroup({
@@ -14,11 +25,7 @@ export class LoginComponent {
     password: new FormControl(''),
   });
 
-  submit() {
-    if (this.form.valid) {
-      this.submitEM.emit(this.form.value);
-    }
-  }
+ 
 
   @Input() error: string | null;
 

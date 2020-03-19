@@ -9,12 +9,15 @@ import { FormGroup, FormControl } from '@angular/forms';
 })
 
 export class SignupComponent {
-  form: FormGroup = new FormGroup({
-    username: new FormControl(''),
-    password: new FormControl(''),
+  public username: String;
+  public pass: String;
+
+  form: FormGroup = new FormGroup({  
     email: new FormControl(''),
     date: new FormControl(''),
   });
+  static username: string;
+  static password: string;
 
   submit() {
     if (this.form.valid) {
