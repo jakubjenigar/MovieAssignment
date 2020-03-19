@@ -1,10 +1,6 @@
 import { Input, Component, Output, EventEmitter, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
-<<<<<<< HEAD
 import { SignupComponent } from '../signup/signup.component';
-=======
-import {Router} from '@angular/router';
->>>>>>> master
 @Component({
   selector: 'loginForm',
   templateUrl: 'login.component.html',
@@ -12,10 +8,12 @@ import {Router} from '@angular/router';
 
 })
 export class LoginComponent {
-<<<<<<< HEAD
 
 
- public function ;submit () {
+ public function ;username: string;
+password: string;
+router: any;
+submit () {
  console.log('User Name: ' + SignupComponent.username);
  console.log('Password: ' + SignupComponent.password);
  if (this.form.valid) {
@@ -24,12 +22,6 @@ export class LoginComponent {
 
  }
   constructor( ) {}
-=======
-  username: string;
-  password: string;
-
-  constructor( private router: Router ) {}
->>>>>>> master
 
   form: FormGroup = new FormGroup({
     username: new FormControl(''),
