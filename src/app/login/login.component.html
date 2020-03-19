@@ -4,13 +4,19 @@
 <form [formGroup]="form" (ngSubmit)="submit()">
   <p>
     <mat-form-field>
-      <input [(ngModel)]="username" matInput placeholder="Username" formControlName="username">
+      <input type="text" matInput
+      placeholder="Username"
+      type="username"
+      formControlName="username">
     </mat-form-field>
   </p>
 
   <p>
     <mat-form-field>
-      <input [(ngModel)]="password" matInput placeholder="Password" formControlName="password">
+      <input type="password"
+      matInput placeholder="Password"
+      type="password"
+      formControlName="password">
     </mat-form-field>
   </p>
 
@@ -21,8 +27,6 @@
   <div class="button">
     <button type="submit" mat-button (click)="login()">Login</button>
     <button type="submit" mat-button routerLink="/sign_up">Sign Up</button>
-
-
   </div>
 
 </form>
