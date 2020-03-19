@@ -13,10 +13,6 @@ const appRoutes: Routes = [
   { path: 'sign_up', component: SignupComponent}
 ];
 
-
-
-
-
 @NgModule({
 
   imports: [RouterModule.forRoot(appRoutes)],
