@@ -5,8 +5,8 @@ import { SignupComponent } from '../signup/signup.component';
   selector: 'loginForm',
   templateUrl: 'login.component.html',
   styleUrls: ['login.component.css'],
-
 })
+
 export class LoginComponent {
 
 
