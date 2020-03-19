@@ -35,7 +35,7 @@ export class SignupComponent {
     birthDate: document.getElementById('birthDate');
 
     if (this.username !== undefined && this.password !== undefined && this.email !== undefined && this.birthDate !== undefined) {
-    this.router.navigate(['log_in']);
+    this.router.navigate(['log_in'], {state: {data: {username: this.username, password: this.password}}});
     } else {
         alert('Something went wrong :/');
     }

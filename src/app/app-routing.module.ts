@@ -12,7 +12,6 @@ const appRoutes: Routes = [
   { path: 'log_in', component: LoginComponent},
   { path: 'sign_up', component: SignupComponent},
 ];
-
 @NgModule({
 
   imports: [RouterModule.forRoot(appRoutes)],

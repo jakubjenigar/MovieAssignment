@@ -1,3 +1,4 @@
+import { SignupComponent } from './../signup/signup.component';
 import { Router } from '@angular/router';
 import { Input, Component, Output, EventEmitter } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
@@ -23,7 +24,7 @@ export class LoginComponent {
   });
 
   login(): void {
-    if (this.username === 'admin' && this.password === '1234') {
+    if (this.username === history.state.data.username && this.password === history.state.data.password) {
       this.router.navigate(['browse']);
     } else {
       alert('Invalid credentials :/');
