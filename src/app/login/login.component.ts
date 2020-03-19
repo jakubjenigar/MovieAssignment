@@ -1,6 +1,6 @@
-import { Input, Component, Output, EventEmitter } from '@angular/core';
+import { Input, Component, Output, EventEmitter, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
-import {Router} from '@angular/router';
+import { SignupComponent } from '../signup/signup.component';
 @Component({
   selector: 'loginForm',
   templateUrl: 'login.component.html',
@@ -8,21 +8,26 @@ import {Router} from '@angular/router';
 })
 
 export class LoginComponent {
-  username: string;
-  password: string;
 
-  constructor( private router: Router ) {}
+
+ public function ;
+ username: string;
+password: string;
+router: any;
+submit () {
+ if (this.form.valid) {
+  this.submitEM.emit(this.form.value);
+}
+
+ }
+  constructor( ) {}
 
   form: FormGroup = new FormGroup({
     username: new FormControl(''),
     password: new FormControl(''),
   });
 
-  submit() {
-    if (this.form.valid) {
-      this.submitEM.emit(this.form.value);
-    }
-  }
+ 
 
   login(): void {
     if (this.username === 'admin' && this.password === '1234') {

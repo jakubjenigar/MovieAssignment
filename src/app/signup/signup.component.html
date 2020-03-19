@@ -4,21 +4,13 @@
 <form [formGroup]="form" (ngSubmit)="submit()">
   <p>
     <mat-form-field>
-      <input type="text"
-      matInput placeholder="Username"
-      id="username"
-      [(ngModel)]="username"
-      formControlName="username">
+      <input [(ngModel)]="username" matInput placeholder="Username" formControlName="username">
     </mat-form-field>
   </p>
 
   <p>
     <mat-form-field>
-      <input type="password"
-       matInput placeholder="Password"
-       id="password"
-       [(ngModel)]="password"
-       formControlName="password">
+      <input [(ngModel)]="password" matInput placeholder="Password" formControlName="password">
     </mat-form-field>
   </p>
 

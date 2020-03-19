@@ -6,7 +6,7 @@
     <mat-form-field>
       <input type="text" matInput
       placeholder="Username"
-      [(ngModel)]="username"
+      type="username"
       formControlName="username">
     </mat-form-field>
   </p>
@@ -15,7 +15,7 @@
     <mat-form-field>
       <input type="password"
       matInput placeholder="Password"
-      [(ngModel)]="password"
+      type="password"
       formControlName="password">
     </mat-form-field>
   </p>
@@ -25,8 +25,8 @@
   </p>
 
   <div class="button">
-    <button type="submit" mat-button routerLink="/sign_up">Sign Up</button>
     <button type="submit" mat-button (click)="login()">Login</button>
+    <button type="submit" mat-button routerLink="/sign_up">Sign Up</button>
   </div>
 
 </form>
