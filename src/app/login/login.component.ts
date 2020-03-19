@@ -10,12 +10,11 @@ import { SignupComponent } from '../signup/signup.component';
 export class LoginComponent {
 
 
- public function ;username: string;
+ public function ;
+ username: string;
 password: string;
 router: any;
 submit () {
- console.log('User Name: ' + SignupComponent.username);
- console.log('Password: ' + SignupComponent.password);
  if (this.form.valid) {
   this.submitEM.emit(this.form.value);
 }
