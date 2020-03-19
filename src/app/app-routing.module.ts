@@ -12,7 +12,6 @@ const appRoutes: Routes = [
   { path: 'browse', component: TabBarNav },
   { path: 'log_in', component: LoginComponent},
   { path: 'sign_up', component: SignupComponent},
-  { path: 'movies', component: MoviesComponent}
 ];
 
 @NgModule({

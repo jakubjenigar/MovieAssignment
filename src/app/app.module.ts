@@ -13,7 +13,6 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
 import { MatInputModule } from '@angular/material/input';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
@@ -21,13 +20,9 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './navbar/menu/menu.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import { ToolbarComponent} from './navbar/toolbar/toolbar.component'
+import { ToolbarComponent} from './navbar/toolbar/toolbar.component';
 import {AppRoutingModule, routingComponents} from './app-routing.module';
-import { OverflowMenuComponent } from './navbar/overflow-menu/overflow-menu.component'
-
-
-// import { HomeComponent } from './home/home.component';
-// import { TabBarNav} from './tabBar/tabbar.component';
+import { OverflowMenuComponent } from './navbar/overflow-menu/overflow-menu.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +54,7 @@ import { OverflowMenuComponent } from './navbar/overflow-menu/overflow-menu.comp
     ReactiveFormsModule,
     MatToolbarModule,
     AppRoutingModule
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent]
