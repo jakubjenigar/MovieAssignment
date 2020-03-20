@@ -7,7 +7,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { AppComponent } from './app.component';
 import { MoviesComponent } from './movies/movies.component';
 import { MovieComponent } from './movie/movie.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TvshowsComponent } from './tvshows/tvshows.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
@@ -23,6 +22,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { ToolbarComponent} from './navbar/toolbar/toolbar.component';
 import {AppRoutingModule, routingComponents} from './app-routing.module';
 import { OverflowMenuComponent } from './navbar/overflow-menu/overflow-menu.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -54,7 +54,6 @@ import { OverflowMenuComponent } from './navbar/overflow-menu/overflow-menu.comp
     ReactiveFormsModule,
     MatToolbarModule,
     AppRoutingModule
-
   ],
   providers: [],
   bootstrap: [AppComponent]
