@@ -23,6 +23,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { ToolbarComponent} from './navbar/toolbar/toolbar.component';
 import {AppRoutingModule, routingComponents} from './app-routing.module';
 import { OverflowMenuComponent } from './navbar/overflow-menu/overflow-menu.component';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatDialogModule} from '@angular/material/dialog';
+import { DialogComponent } from './dialog/dialog.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +39,9 @@ import { OverflowMenuComponent } from './navbar/overflow-menu/overflow-menu.comp
     FooterComponent,
     MenuComponent,
     ToolbarComponent,
-    OverflowMenuComponent
+    OverflowMenuComponent,
+    DialogComponent
+
   ],
   imports: [
     BrowserModule,
@@ -53,8 +58,13 @@ import { OverflowMenuComponent } from './navbar/overflow-menu/overflow-menu.comp
     FormsModule,
     ReactiveFormsModule,
     MatToolbarModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatTooltipModule,
+    MatDialogModule
 
+  ],
+  entryComponents: [
+    DialogComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -15,11 +15,17 @@
   </mat-card-content>
 
    <mat-card-actions>
-      <button mat-button>Watch </button>
-          <button mat-button><i class="material-icons">
+      <button mat-button matTooltip="Watch trailer"
+        matTooltipShowDelay="1000"
+        matTooltipHideDelay="500" (click)="openDialog()">Trailer </button>
+          <button mat-button matTooltip="Share"
+          matTooltipShowDelay="1000"
+          matTooltipHideDelay="500"><i class="material-icons">
         share
         </i></button>
-        <button mat-button><i class="material-icons">
+        <button mat-button matTooltip="Add to favorites"
+        matTooltipShowDelay="1000"
+        matTooltipHideDelay="500"><i class="material-icons">
           favorite
           </i></button>
     </mat-card-actions>
