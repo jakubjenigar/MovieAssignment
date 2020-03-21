@@ -42,7 +42,6 @@ import { MatSnackBarModule } from '@angular/material';
     ToolbarComponent,
     OverflowMenuComponent,
     DialogComponent
-
   ],
   imports: [
     BrowserModule,
@@ -61,11 +60,11 @@ import { MatSnackBarModule } from '@angular/material';
     MatToolbarModule,
     AppRoutingModule,
     MatTooltipModule,
-    MatDialogModule
+    MatDialogModule,
+    MatSnackBarModule
   ],
   entryComponents: [
     DialogComponent,
-    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,6 @@
 import { LoginComponent } from './../login/login.component';
 import { Component, Input } from '@angular/core';
-import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { DialogComponent } from '../dialog/dialog.component';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { MatSnackBar } from '@angular/material';
