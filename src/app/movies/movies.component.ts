@@ -11,7 +11,7 @@ export class MoviesComponent {
   movies;
 
   constructor(movieService: MovieService) {
-    this.movies = movieService.getMovie();
+    this.movies = movieService.getMovies();
   }
 
 }

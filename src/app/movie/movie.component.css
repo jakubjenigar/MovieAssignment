@@ -6,6 +6,12 @@
   border-radius: 10px;
 }
 
+
+
+.mat-card:hover {
+  background-color: rgba(0, 150, 167, 0.863);
+}
+
 mat-card-title {
   display: flex;
   justify-content: left;
