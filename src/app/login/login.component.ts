@@ -1,4 +1,3 @@
-import { SignupComponent } from './../signup/signup.component';
 import { Router } from '@angular/router';
 import { Input, Component, Output, EventEmitter } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
@@ -7,6 +6,7 @@ import { FormGroup, FormControl } from '@angular/forms';
   templateUrl: 'login.component.html',
   styleUrls: ['login.component.css']
 })
+
 export class LoginComponent {
   username: string;
   password: string;
@@ -23,9 +23,9 @@ export class LoginComponent {
     password: new FormControl('')
   });
 
-  login(): void {
+   login() {
     if (this.username === history.state.data.username && this.password === history.state.data.password) {
-      this.router.navigate(['browse']);
+      this.router.navigate(['browse'], {state: {data: {username: history.state.data.username}}});
     } else {
       alert('Invalid credentials :/');
     }
@@ -34,4 +34,5 @@ export class LoginComponent {
   @Input() error: string | null;
 
   @Output() submitEM = new EventEmitter();
+
 }

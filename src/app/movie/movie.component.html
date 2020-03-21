@@ -19,7 +19,13 @@
           <button mat-button><i class="material-icons">
         share
         </i></button>
-        <button mat-button><i class="material-icons">
+
+       <button mat-button
+       (click)="toggleLikeState()"
+       name="iconName"
+       tappable [@heart]="likeState"
+       size="large">
+       <i class="material-icons">
           favorite
           </i></button>
     </mat-card-actions>

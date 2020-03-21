@@ -12,13 +12,11 @@ export class SignupComponent {
   username: string;
   password: string;
   email: string;
-  birthDate: Date;
 
     form: FormGroup = new FormGroup ({
     username: new FormControl(''),
     password: new FormControl(''),
-    email: new FormControl(''),
-    date: new FormControl(''),
+    email: new FormControl('')
   });
 
   constructor(private router: Router) {}
@@ -32,9 +30,8 @@ export class SignupComponent {
     username: document.getElementById('username');
     password: document.getElementById('password');
     email: document.getElementById('email');
-    birthDate: document.getElementById('birthDate');
 
-    if (this.username !== undefined && this.password !== undefined && this.email !== undefined && this.birthDate !== undefined) {
+    if (this.username !== undefined && this.password !== undefined && this.email !== undefined) {
     this.router.navigate(['log_in'], {state: {data: {username: this.username, password: this.password}}});
     } else {
         alert('Something went wrong :/');
