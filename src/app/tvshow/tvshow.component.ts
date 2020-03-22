@@ -1,16 +1,14 @@
-import { LoginComponent } from './../login/login.component';
+import { TvshowsComponent } from './../tvshows/tvshows.component';
 import { Component, Input } from '@angular/core';
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
 import { DialogComponent } from '../dialog/dialog.component';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { MatSnackBar } from '@angular/material';
-import { TvshowsComponent } from '../tvshows/tvshows.component';
 
 @Component({
   selector: 'app-tvshow',
   templateUrl: './tvshow.component.html',
   styleUrls: ['./tvshow.component.css'],
-  providers: [],
   animations: [
     trigger('heart', [
       state(
@@ -36,16 +34,21 @@ import { TvshowsComponent } from '../tvshows/tvshows.component';
 
 export class TvshowComponent {
   @Input() data;
-  movies;
+  tvshows;
   likeState = 'unliked';
   iconName = 'heart-empty';
 
-  constructor(public dialog: MatDialog, private snackBar: MatSnackBar, tvshowComponent: TvshowsComponent) {
+  constructor(
+    public dialog: MatDialog,
+    private snackBar: MatSnackBar,
+    tvshowsComponent: TvshowsComponent) {
 
-      this.movies = tvshowComponent.getSeries();
+    this.tvshows = tvshowsComponent.getSeries();
   }
 
-
+  getSeries() {
+    return this.tvshows;
+  }
 
   openDialog(url): void {
     const dialogRef = this.dialog.open(DialogComponent, {
@@ -57,7 +60,6 @@ export class TvshowComponent {
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
     });
-
   }
 
   toggleLikeState() {

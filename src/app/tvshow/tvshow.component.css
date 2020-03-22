@@ -16,7 +16,7 @@
 .grid{
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: center;
 }
 
 .mat-card:hover {
@@ -31,8 +31,6 @@ mat-card-title {
   padding-left: 20px;
 
 }
-
-
 
 mat-card-content {
   display: flex;
@@ -74,7 +72,6 @@ mat-card-subtitle {
 p {
   height: 30px;
 }
-
 
 @media only screen and (max-width: 600px) {
   .mat-card-image {

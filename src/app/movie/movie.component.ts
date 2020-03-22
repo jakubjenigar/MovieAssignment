@@ -1,6 +1,5 @@
-import { LoginComponent } from './../login/login.component';
 import { Component, Input } from '@angular/core';
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
 import { DialogComponent } from '../dialog/dialog.component';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { MatSnackBar } from '@angular/material';
@@ -40,12 +39,13 @@ export class MovieComponent {
   likeState = 'unliked';
   iconName = 'heart-empty';
 
-  constructor(public dialog: MatDialog, private snackBar: MatSnackBar, movieComponent: MoviesComponent) {
+  constructor(
+    public dialog: MatDialog,
+    private snackBar: MatSnackBar,
+    movieComponent: MoviesComponent) {
 
-      this.movies = movieComponent.getMovies();
+    this.movies = movieComponent.getMovies();
   }
-
-
 
   openDialog(url): void {
     const dialogRef = this.dialog.open(DialogComponent, {
@@ -57,7 +57,6 @@ export class MovieComponent {
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
     });
-
   }
 
   toggleLikeState() {
