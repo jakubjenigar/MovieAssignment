@@ -1,8 +1,14 @@
 
 h2 {
     padding-left: 20px;
+    color: ivory;
 }
 
 mat-dialog-actions {
     padding-left: 20px;
+}
+
+.backButton{
+    color: white;
+    background-color: #a32828;
 }

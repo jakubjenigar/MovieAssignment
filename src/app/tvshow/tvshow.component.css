@@ -1,16 +1,17 @@
 .mat-card {
-  /* display: block; */
+  flex: auto;
   position: relative;
   max-width: 400px;
   min-width: 400px;
   min-height: 490px;
-  background-color: #0097A7;
+  background-color: #212121;
+    /* background-color: #a32828 ; */
   padding-left: 0%;
   padding-right: 0%;
   padding-bottom: 0%;
   margin: 20px;
-  flex-grow: 1;
   border-radius: 0px;
+
 }
 
 .grid{
@@ -20,13 +21,15 @@
 }
 
 .mat-card:hover {
-  background-color: rgba(0, 150, 167, 0.863);
+  /* background-color: #a32828; */
+  transform: scale(1.025);
+  
 }
 
 mat-card-title {
   display: flex;
   justify-content: left;
-  color: #212121;
+  color: #ffffff;
   font-size: 15pt;
   padding-left: 20px;
 
@@ -35,7 +38,7 @@ mat-card-title {
 mat-card-content {
   display: flex;
   justify-content: left;
-  color: #212121;
+  color: rgba(255, 255, 255, 0.75);
   text-align: justify;
   font-size: 12pt;
   padding-left: 20px;
@@ -44,14 +47,16 @@ mat-card-content {
 }
 
 mat-card-actions{
-  padding-left: 20px;
+  
+  padding-right: 20px;
   padding-bottom: 20px;
+  text-align: right;
+  
 }
 mat-card-subtitle {
   font-size: 16pt;
-  color: #B2EBF2;
+  color: #baa3a3;
   font-size: 13pt;
-  color: #80b5dd;
   padding-left: 20px;
 }
 
@@ -63,9 +68,19 @@ mat-card-subtitle {
 
 }
 
+.mat-raised-button{
+  margin-right: 10px;
+  background-color: #a32828 ;
+  color: #d6c9c9;
+}
+button:hover {
+  color: #ffffff;
+
+}
+
 .mat-button {
   color: #212121;
-  justify-content: flex-end;
+  margin-right: 10px;
   font-size: 14pt;
 }
 
@@ -80,3 +95,8 @@ p {
   }
 }
 
+/* Trying to add a play button here */
+.mat-card-image:hover{
+ opacity: 0.6;
+ 
+}

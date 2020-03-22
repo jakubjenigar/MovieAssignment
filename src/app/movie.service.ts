@@ -49,6 +49,30 @@ export class MovieService {
         trailer: 'LbfMDwc4azU',
         description: 'While Frodo edges closer to Mordor, the fellowship makes a stand against Sauron\'s new ally, and his hordes of Isengard.',
         type: 'movie'
+      },
+      {
+        title: 'A Quiet Place',
+        genre: 'Horror',
+        photo: 'https://www.dreadcentral.com/wp-content/uploads/2019/11/FIRST-A-QUIET-PLACE-2-TRAILER-COMING-SOON.jpg',
+        trailer: 'WR7cc5t7tv8',
+        description: 'In a post-apocalyptic world, a family is forced to live in silence while hiding from monsters with ultra-sensitive hearing. ',
+        type: 'movie'
+      },
+      {
+        title: 'La La Land',
+        genre: 'Musical',
+        photo: 'https://i0.wp.com/2300happynews.dk/wp-content/uploads/2017/10/la-la-land.jpg?fit=1280%2C800&ssl=1',
+        trailer: '0pdqf4P9MB8',
+        description: 'While navigating their careers in Los Angeles, a pianist and an actress fall in love while attempting to reconcile their aspirations for the future. ',
+        type: 'movie'
+      },
+      {
+        title: 'Arrival',
+        genre: 'Sci-Fi',
+        photo: 'https://occ-0-114-116.1.nflxso.net/dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABW1-G72SIrMpShg7B89yGCImfo2yCLslfIddVaAtAeOk0KK2dj7pXQQVr6Ammuke7ePpMyrRw7Npse-HwxbrcoT1cGjv.jpg?r=1aa',
+        trailer: 'tFMo3UJ4B4g',
+        description: 'A linguist works with the military to communicate with alien lifeforms after twelve mysterious spacecraft appear around the world. ',
+        type: 'movie'
       }
     ];
   }

@@ -5,6 +5,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 import { MatSnackBar } from '@angular/material';
 import { MoviesComponent } from '../movies/movies.component';
 
+
 @Component({
   selector: 'app-movie',
   templateUrl: './movie.component.html',

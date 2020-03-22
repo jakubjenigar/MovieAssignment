@@ -29,13 +29,13 @@ mat-card {
 }
 
 .mat-input-element {
-  caret-color: #00BCD4;
+  caret-color: #baa3a3;
 }
 
 
 ::ng-deep.mat-form-field-ripple {
   /*change color of underline when focused*/
-  background-color: #00BCD4 !important;
+  background-color: #baa3a3 !important;
   ;
 }
 
@@ -47,7 +47,7 @@ mat-card {
 
 /* Change label color on focused */
 ::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
-  color: #00BCD4 !important;
+  color: #baa3a3 !important;
 }
 
 .error {
@@ -61,10 +61,22 @@ mat-card {
   display: flex;
   justify-content: flex-end;
   font-size: 12pt;
+ 
 }
 
+.mat-raised-button{
+  background-color: #a32828 ;
+  color: #d6c9c9;
+}
+
+.mat-stroked-button{
+  border-color: #d6c9c9;
+  color: #d6c9c9;
+  margin-right: 10px;
+
+}
 
 button:hover {
-  color: #00BCD4;
- 
+  color: #ffffff;
+
 }

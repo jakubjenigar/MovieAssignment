@@ -2,7 +2,7 @@
   background-color: rgb(9, 32, 62,0);
   opacity: 1;
   height: 50px;
-
+  position: aboslute;
   
   bottom: 0;
   width: 100%;
@@ -11,6 +11,7 @@
 
 .footer-copyright, .contact-us {
   text-align: center;
+  line-height: 1px;
 }
 
 a {

@@ -15,22 +15,23 @@
        {{ tvshow.description }}
     </mat-card-content>
 
-      <mat-card-actions>
-        <button mat-button matTooltip="Watch trailer"
-          matTooltipShowDelay="1000"
-          matTooltipHideDelay="500" (click)="openDialog(tvshow)">Trailer</button>
-         <button mat-button
-         matTooltip="Add to favorites"
-         matTooltipShowDelay="1000"
-         matTooltipHideDelay="500"
-         (click)="toggleLikeState()"
-         name="iconName"
-         tappable [@heart]="likeState"
-         size="large">
-         <i class="material-icons">
-            favorite
-            </i></button>
-      </mat-card-actions>
+    <mat-card-actions>
+      <button mat-icon-button
+       matTooltip="Add to favorites"
+       matTooltipShowDelay="1000"
+       matTooltipHideDelay="500"
+       (click)="toggleLikeState()"
+       name="iconName"
+       tappable [@heart]="likeState"
+       size="large">
+       <i class="material-icons">
+          favorite
+          </i></button>
+      <button mat-raised-button matTooltip="Watch trailer"
+        matTooltipShowDelay="1000"
+        matTooltipHideDelay="500" (click)="openDialog(tvshow)">Trailer </button>
+       
+    </mat-card-actions>
 
   </mat-card>
   </div>
