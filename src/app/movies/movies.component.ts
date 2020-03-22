@@ -1,5 +1,5 @@
 import { MovieService } from './../movie.service';
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-movies',
@@ -11,7 +11,10 @@ export class MoviesComponent {
   movies;
 
   constructor(movieService: MovieService) {
-    this.movies = movieService.getMovie();
+    this.movies = movieService.getMovies();
   }
 
+  getMovies() {
+    return this.movies;
+  }
 }

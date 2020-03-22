@@ -7,6 +7,7 @@
       <input type="text" matInput
       placeholder="Username"
       type="username"
+      [(ngModel)]="username"
       formControlName="username">
     </mat-form-field>
   </p>
@@ -16,8 +17,12 @@
       <input type="password"
       matInput placeholder="Password"
       type="password"
+      [(ngModel)]="password"
       formControlName="password">
     </mat-form-field>
+  </p>
+  <p>
+    <button type="submit" mat-button routerLink="/sign_up">Don't have an account yet? SignUp</button>
   </p>
 
   <p *ngIf="error" class="error">
@@ -26,7 +31,6 @@
 
   <div class="button">
     <button type="submit" mat-button (click)="login()">Login</button>
-    <button type="submit" mat-button routerLink="/sign_up">Sign Up</button>
   </div>
 
 </form>

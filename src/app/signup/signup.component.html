@@ -4,13 +4,20 @@
 <form [formGroup]="form" (ngSubmit)="submit()">
   <p>
     <mat-form-field>
-      <input [(ngModel)]="username" matInput placeholder="Username" formControlName="username">
+      <input
+      [(ngModel)]="username"
+      matInput placeholder="Username"
+      formControlName="username">
     </mat-form-field>
   </p>
 
   <p>
     <mat-form-field>
-      <input [(ngModel)]="password" matInput placeholder="Password" formControlName="password">
+      <input
+      [(ngModel)]="password"
+      type="password"
+      matInput placeholder="Password"
+      formControlName="password">
     </mat-form-field>
   </p>
 
@@ -23,17 +30,6 @@
       formControlName="email">
     </mat-form-field>
   </p>
-
-  <p>
-    <mat-form-field>
-      <input type="date"
-      matInput placeholder="Date of Birth"
-      id="birthDate"
-      [(ngModel)]="birthDate"
-      formControlName="date">
-    </mat-form-field>
-  </p>
-
 
   <p *ngIf="error" class="error">
     {{ error }}

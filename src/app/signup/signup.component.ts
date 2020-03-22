@@ -9,13 +9,17 @@ import {Router} from '@angular/router';
 })
 
 export class SignupComponent {
-    form: FormGroup = new FormGroup({  
-    email: new FormControl(''),
-    date: new FormControl(''),
-  });
-  static username: string;
-  static password: string;
+  username: string;
+  password: string;
+  email: string;
 
+    form: FormGroup = new FormGroup ({
+    username: new FormControl(''),
+    password: new FormControl(''),
+    email: new FormControl('')
+  });
+
+  constructor(private router: Router) {}
   submit() {
     if (this.form.valid) {
       this.submitEM.emit(this.form.value);
@@ -26,14 +30,12 @@ export class SignupComponent {
     username: document.getElementById('username');
     password: document.getElementById('password');
     email: document.getElementById('email');
-    birthDate: document.getElementById('birthDate');
 
-    //if (this.username !== undefined && this.password !== undefined && this.email !== undefined && this.birthDate !== undefined) {
-     // sessionStorage.setItem;
-     // this.router.navigate(['log_in']);
-    //} else {
-    //    alert('Something went wrong :/');
-     // }
+    if (this.username !== undefined && this.password !== undefined && this.email !== undefined) {
+    this.router.navigate(['log_in'], {state: {data: {username: this.username, password: this.password}}});
+    } else {
+        alert('Something went wrong :/');
+    }
   }
 
   @Input() error: string | null;

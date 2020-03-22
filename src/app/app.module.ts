@@ -7,27 +7,28 @@ import { MatButtonModule } from '@angular/material/button';
 import { AppComponent } from './app.component';
 import { MoviesComponent } from './movies/movies.component';
 import { MovieComponent } from './movie/movie.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TvshowsComponent } from './tvshows/tvshows.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
 import { MatInputModule } from '@angular/material/input';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './navbar/menu/menu.component';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import { ToolbarComponent} from './navbar/toolbar/toolbar.component'
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { ToolbarComponent} from './navbar/toolbar/toolbar.component';
 import {AppRoutingModule, routingComponents} from './app-routing.module';
-import { OverflowMenuComponent } from './navbar/overflow-menu/overflow-menu.component'
-
-
-// import { HomeComponent } from './home/home.component';
-// import { TabBarNav} from './tabBar/tabbar.component';
+import { OverflowMenuComponent } from './navbar/overflow-menu/overflow-menu.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatDialogModule } from '@angular/material/dialog';
+import { DialogComponent } from './dialog/dialog.component';
+import { MatSnackBarModule } from '@angular/material';
+import { HttpClientModule } from '@angular/common/http';
+import { TvshowComponent } from './tvshow/tvshow.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,9 @@ import { OverflowMenuComponent } from './navbar/overflow-menu/overflow-menu.comp
     FooterComponent,
     MenuComponent,
     ToolbarComponent,
-    OverflowMenuComponent
+    OverflowMenuComponent,
+    DialogComponent,
+    TvshowComponent
   ],
   imports: [
     BrowserModule,
@@ -58,10 +61,16 @@ import { OverflowMenuComponent } from './navbar/overflow-menu/overflow-menu.comp
     FormsModule,
     ReactiveFormsModule,
     MatToolbarModule,
-    AppRoutingModule
-    
+    AppRoutingModule,
+    MatTooltipModule,
+    MatDialogModule,
+    MatSnackBarModule,
+    HttpClientModule
   ],
-  providers: [],
+  entryComponents: [
+    DialogComponent,
+  ],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

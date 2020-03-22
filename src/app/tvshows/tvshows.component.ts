@@ -14,7 +14,9 @@ export class TvshowsComponent implements OnInit {
     this.tvshows = tvshowsService.gettvShow();
    }
 
-  ngOnInit() {
+  getSeries() {
+    return this.tvshows;
   }
 
+  ngOnInit() { }
 }

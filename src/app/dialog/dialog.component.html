@@ -1,0 +1,29 @@
+
+<h2 mat-dialog-title>{{data.myVar.title}}</h2>
+
+
+<mat-dialog-content>
+    <iframe width="560" height="315" [src]="videoUrl" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+    </iframe>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close matTooltip="Cancel dialog"
+  matTooltipShowDelay="1000"
+  matTooltipHideDelay="500">Cancel</button>
+  <!-- The mat-dialog-close directive optionally accepts a value as a result for the dialog. -->
+
+<button mat-button
+       matTooltip="Add to favorites"
+       matTooltipShowDelay="1000"
+       matTooltipHideDelay="500"
+       (click)="toggleLikeState()"
+       name="iconName"
+       tappable [@heart]="likeState"
+       size="large">
+       <i class="material-icons">
+          favorite
+          </i></button>
+
+</mat-dialog-actions>

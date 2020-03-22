@@ -1,5 +1,5 @@
 .mat-card {
-  flex: auto;
+  /* display: block; */
   position: relative;
   max-width: 400px;
   min-width: 400px;
@@ -9,6 +9,7 @@
   padding-right: 0%;
   padding-bottom: 0%;
   margin: 20px;
+  flex-grow: 1;
   border-radius: 0px;
 }
 
@@ -78,3 +79,4 @@ p {
     height: auto;
   }
 }
+

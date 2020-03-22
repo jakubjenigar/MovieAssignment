@@ -5,3 +5,25 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.dialogBackdrop{
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  
+.custom-dialog-container .mat-dialog-container{
+    background-color: #0097A7;
+    padding-left: 0%;
+    padding-right: 0%;
+    border-radius: 0px;
+    overflow: hidden;
+  }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
