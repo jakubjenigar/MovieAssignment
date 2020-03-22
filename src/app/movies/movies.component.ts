@@ -14,4 +14,8 @@ export class MoviesComponent {
     this.movies = movieService.getMovies();
   }
 
+
+    getMovies() {
+      return this.movies;
+    }
 }
