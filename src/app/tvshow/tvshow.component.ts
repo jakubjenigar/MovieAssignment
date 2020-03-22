@@ -4,12 +4,12 @@ import { MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialo
 import { DialogComponent } from '../dialog/dialog.component';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { MatSnackBar } from '@angular/material';
-import { MoviesComponent } from '../movies/movies.component';
+import { TvshowsComponent } from '../tvshows/tvshows.component';
 
 @Component({
-  selector: 'app-movie',
-  templateUrl: './movie.component.html',
-  styleUrls: ['./movie.component.css'],
+  selector: 'app-tvshow',
+  templateUrl: './tvshow.component.html',
+  styleUrls: ['./tvshow.component.css'],
   providers: [],
   animations: [
     trigger('heart', [
@@ -34,15 +34,15 @@ import { MoviesComponent } from '../movies/movies.component';
   ]
 })
 
-export class MovieComponent {
+export class TvshowComponent {
   @Input() data;
   movies;
   likeState = 'unliked';
   iconName = 'heart-empty';
 
-  constructor(public dialog: MatDialog, private snackBar: MatSnackBar, movieComponent: MoviesComponent) {
+  constructor(public dialog: MatDialog, private snackBar: MatSnackBar, tvshowComponent: TvshowsComponent) {
 
-      this.movies = movieComponent.getMovies();
+      this.movies = tvshowComponent.getSeries();
   }
 
 

@@ -27,6 +27,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatDialogModule} from '@angular/material/dialog';
 import { DialogComponent } from './dialog/dialog.component';
 import { MatSnackBarModule } from '@angular/material';
+import { HttpClientModule } from '@angular/common/http';
+import { TvshowComponent } from './tvshow/tvshow.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,8 @@ import { MatSnackBarModule } from '@angular/material';
     MenuComponent,
     ToolbarComponent,
     OverflowMenuComponent,
-    DialogComponent
+    DialogComponent,
+    TvshowComponent
   ],
   imports: [
     BrowserModule,
@@ -61,12 +64,13 @@ import { MatSnackBarModule } from '@angular/material';
     AppRoutingModule,
     MatTooltipModule,
     MatDialogModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    HttpClientModule
   ],
   entryComponents: [
     DialogComponent,
   ],
-  providers: [],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
