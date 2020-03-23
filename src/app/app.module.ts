@@ -29,6 +29,7 @@ import { DialogComponent } from './dialog/dialog.component';
 import { MatSnackBarModule } from '@angular/material';
 import { HttpClientModule } from '@angular/common/http';
 import { TvshowComponent } from './tvshow/tvshow.component';
+import { FavButtonComponent } from './fav-button/fav-button.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { TvshowComponent } from './tvshow/tvshow.component';
     ToolbarComponent,
     OverflowMenuComponent,
     DialogComponent,
-    TvshowComponent
+    TvshowComponent,
+    FavButtonComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,11 @@
+<button mat-icon-button
+matTooltip="Add to favorites"
+matTooltipShowDelay="1000"
+matTooltipHideDelay="500"
+(click)="toggleLikeState()"
+name="iconName"
+tappable [@heart]="likeState"
+size="large">
+<i class="material-icons">
+   favorite
+   </i></button>
