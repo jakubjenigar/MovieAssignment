@@ -20,9 +20,9 @@ export class MovieComponent {
     this.movies = movieComponent.getMovies();
   }
 
-  openDialog(url): void {
+  openDialog(movie): void {
     const dialogRef = this.dialog.open(DialogComponent, {
-      data: {myVar: url.trailer},
+      data: {myVar: movie.trailer, myTitle: movie.title},
       hasBackdrop: true,
       backdropClass: 'dialogBackdrop',
       panelClass: 'custom-dialog-container'
