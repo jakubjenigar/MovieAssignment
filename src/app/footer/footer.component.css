@@ -2,9 +2,8 @@
   background-color: rgb(9, 32, 62,0);
   opacity: 1;
   height: 50px;
-  position: aboslute;
   
-  bottom: 0;
+  
   width: 100%;
  
 }
@@ -18,3 +17,4 @@ a {
   color: white;
   text-decoration: none;
 }
+

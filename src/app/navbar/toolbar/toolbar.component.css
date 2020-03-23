@@ -3,3 +3,10 @@
     color: white;
     
 }
+
+.watchit{
+  display: table;
+  margin: 0 auto;
+  font-size: 24pt;
+
+}

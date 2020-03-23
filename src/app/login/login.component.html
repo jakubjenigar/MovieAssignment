@@ -1,3 +1,5 @@
+<div class="loginPage">
+  <div class="login">
 <mat-card>
     <mat-card-title>Login</mat-card-title>
 <mat-card-content>
@@ -27,12 +29,20 @@
   </p>
 
   <div class="button">
-    <p>
-      Don't have an account yet?  <button type="submit" mat-stroked-button class="signup"  routerLink="/sign_up">Sign Up</button>
+   
     
-    <button type="submit" mat-raised-button  (click)="login()">Login</button></p>
+    <button type="submit" mat-raised-button  (click)="login()">Login</button>
   </div>
 
+  <p>
+    Don't have an account yet?  <a routerLink="/sign_up" style="text-align: right; text-decoration: none; color: #a32828;">Sign Up</a></p>
+    <!-- <button type="submit" mat-stroked-button class="signup"  routerLink="/sign_up">Sign Up</button> -->
 </form>
 </mat-card-content>
 </mat-card>
+</div>
+<div class="welcomeText">
+<h1>Welcome!</h1>
+<h2> Log in now to access a library of movies and tv shows on demand</h2>
+</div>
+</div>

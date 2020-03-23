@@ -21,7 +21,6 @@ import { MenuComponent } from './navbar/menu/menu.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { ToolbarComponent} from './navbar/toolbar/toolbar.component';
 import {AppRoutingModule, routingComponents} from './app-routing.module';
-import { OverflowMenuComponent } from './navbar/overflow-menu/overflow-menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDialogModule } from '@angular/material/dialog';
@@ -43,7 +42,6 @@ import { FavButtonComponent } from './fav-button/fav-button.component';
     FooterComponent,
     MenuComponent,
     ToolbarComponent,
-    OverflowMenuComponent,
     DialogComponent,
     TvshowComponent,
     FavButtonComponent

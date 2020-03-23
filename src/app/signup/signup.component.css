@@ -80,3 +80,15 @@ button:hover {
   color: #ffffff;
 
 }
+
+.welcomeText{
+  float: right;
+  padding: 5rem;
+  padding-top: 0;
+}
+h1{
+  font-size: 500%;
+}
+.signUp{
+  float: left;
+}

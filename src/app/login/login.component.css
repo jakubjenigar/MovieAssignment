@@ -2,6 +2,7 @@
   display: flex;
   justify-content: left;
   margin: 100px 50px;
+  
 }
 
 .mat-form-field {
@@ -79,4 +80,17 @@ mat-card {
 button:hover {
   color: #ffffff;
 
+}
+
+.welcomeText{
+  float: right;
+  padding: 5rem; 
+  padding-top: 0;
+}
+h1{
+  font-size: 500%;
+}
+
+.login{
+  float: left;
 }
