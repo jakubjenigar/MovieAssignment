@@ -23,9 +23,9 @@ export class TvshowComponent {
     return this.tvshows;
   }
 
-  openDialog(url): void {
+  openDialog(serie): void {
     const dialogRef = this.dialog.open(DialogComponent, {
-      data: {myVar: url.trailer},
+      data: {myVar: serie.trailer, myTitle: serie.title},
       hasBackdrop: true,
       backdropClass: 'dialogBackdrop',
       panelClass: 'custom-dialog-container'
