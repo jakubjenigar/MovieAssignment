@@ -1,20 +1,24 @@
 import { MovieService } from './../movie.service';
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import {Movie} from '../movie.model';
 @Component({
   selector: 'app-movies',
   templateUrl: './movies.component.html',
   styleUrls: ['./movies.component.css'],
   providers: [MovieService]
 })
-export class MoviesComponent {
-  movies;
+export class MoviesComponent implements OnInit {
+  movies: Movie[] = [];
 
-  constructor(movieService: MovieService) {
-    this.movies = movieService.getMovies();
+  constructor(private movieService: MovieService) {
   }
 
-  getMovies() {
-    return this.movies;
+  ngOnInit() {
+
+    const movieObservable = this.movieService.getAll();
+    movieObservable.subscribe((moviesData: Movie[]) => { this.movies = moviesData;
+     }
+     );
   }
 }

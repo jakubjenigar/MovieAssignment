@@ -17,12 +17,12 @@ export class MovieComponent {
     public dialog: MatDialog,
     movieComponent: MoviesComponent) {
 
-    this.movies = movieComponent.getMovies();
+    // this.movies = movieComponent.getMovies();
   }
 
   openDialog(movie): void {
     const dialogRef = this.dialog.open(DialogComponent, {
-      data: {myVar: movie.trailer, myTitle: movie.title},
+      data: {myVar: movie.URL, myTitle: movie.Title},
       hasBackdrop: true,
       backdropClass: 'dialogBackdrop',
       panelClass: 'custom-dialog-container'

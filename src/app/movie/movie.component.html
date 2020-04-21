@@ -1,18 +1,18 @@
 <div class="grid">
 
-  <mat-card *ngFor ="let movie of movies" >
+  <mat-card *ngFor ="let movie of data" >
 
-    <mat-card-title> {{ movie.title }} </mat-card-title>
-    <mat-card-subtitle> {{ movie.genre }} </mat-card-subtitle>
+    <mat-card-title> {{ movie.Title }} </mat-card-title>
+    <mat-card-subtitle> {{ movie.Genre }} </mat-card-subtitle>
 
-  <img mat-card-image  (click)="openDialog(movie)" src="{{ movie.photo }}"
+  <img mat-card-image  (click)="openDialog(movie)" src="{{ movie.Picture }}"
   class="image"
   style="width: 100%; height: 100%; max-width: 500px; max-height: 250px;">
 
   <mat-card-content>
       Description:
     <br>
-     {{ movie.description }}
+     {{ movie.Description }}
   </mat-card-content>
 
     <mat-card-actions>
