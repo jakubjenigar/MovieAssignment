@@ -5,7 +5,6 @@ import {TvShowsService} from "../tvshows.service";
   selector: 'app-admin',
   templateUrl: './admin.component.html',
   styleUrls: ['./admin.component.css'],
-  providers: [TvShowsService]
 })
 export class AdminComponent implements OnInit {
   tvshow = {
