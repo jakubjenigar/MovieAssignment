@@ -1,5 +1,10 @@
 {
   "projects": {
+
+    "default": "playmovie-e3d09",
+    "y": "watchit-c81c3",
+    "staging": "watchitt-c6afc"
+
     "default": "watchit-d7704",
     "staging": "watchit-d7704"
   }

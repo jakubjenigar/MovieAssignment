@@ -67,7 +67,8 @@ import { AdminComponent } from './admin/admin.component';
     MatTooltipModule,
     MatDialogModule,
     MatSnackBarModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDialogModule
   ],
   entryComponents: [
     DialogComponent,
