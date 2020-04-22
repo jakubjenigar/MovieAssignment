@@ -35,6 +35,10 @@ export class FavButtonComponent implements OnInit {
   constructor(private snackBar: MatSnackBar) { }
 
   ngOnInit() {
+
+    
+
+
   }
 
   toggleLikeState() {

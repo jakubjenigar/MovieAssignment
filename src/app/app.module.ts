@@ -29,6 +29,9 @@ import { MatSnackBarModule } from '@angular/material';
 import { HttpClientModule } from '@angular/common/http';
 import { TvshowComponent } from './tvshow/tvshow.component';
 import { FavButtonComponent } from './fav-button/fav-button.component';
+import { FavoritesComponent } from './favorites/favorites.component';
+
+
 
 @NgModule({
   declarations: [
@@ -44,7 +47,9 @@ import { FavButtonComponent } from './fav-button/fav-button.component';
     ToolbarComponent,
     DialogComponent,
     TvshowComponent,
-    FavButtonComponent
+    FavButtonComponent,
+    FavoritesComponent
+
   ],
   imports: [
     BrowserModule,
@@ -65,7 +70,7 @@ import { FavButtonComponent } from './fav-button/fav-button.component';
     MatTooltipModule,
     MatDialogModule,
     MatSnackBarModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   entryComponents: [
     DialogComponent,
