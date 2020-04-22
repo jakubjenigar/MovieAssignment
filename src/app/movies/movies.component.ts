@@ -1,5 +1,5 @@
 import { MovieService } from './../movie.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Injectable } from '@angular/core';
 
 import {Movie} from '../movie.model';
 import { Observable } from 'rxjs';
@@ -9,6 +9,10 @@ import { Observable } from 'rxjs';
   styleUrls: ['./movies.component.css'],
   providers: [MovieService]
 })
+@Injectable({
+  providedIn: 'root'
+})
+
 export class MoviesComponent implements OnInit {
   movies: Movie[] = [];
 
@@ -36,8 +40,5 @@ export class MoviesComponent implements OnInit {
     setTimeout(() => window.location.reload(), 1000);
   }
 
-  public addMovie(movie: Movie) {
-    this.movieService.addMovie(movie).subscribe();
-  }
 
 }

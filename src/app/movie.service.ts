@@ -30,7 +30,7 @@ deleteById(id: number): Observable<{}> {
   return this.http.delete(url);
 }
 
-addMovie(movie: Movie): Observable<Movie> {
+addMovie(movie): Observable<Movie> {
   return this.http.post<Movie>(this.baseUrl, movie);
 
 }

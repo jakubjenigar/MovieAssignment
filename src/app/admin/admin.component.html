@@ -3,15 +3,14 @@
     <mat-card>
       <mat-card-title>Admin tools</mat-card-title>
       <mat-card-content>
-        <form (ngSubmit)="saveTvShow()">
+        <form >
           <p>
             <mat-form-field>
               <input type="text" matInput
                      placeholder="Title"
-                     type="title"
-                     id = "title"
+                     id="title"
                      name="title"
-                     [(ngModel)]="tvshow.title">
+                     [(ngModel)]="objectForm.title">
             </mat-form-field>
           </p>
 
@@ -19,10 +18,9 @@
             <mat-form-field>
               <input type="text"
                      matInput placeholder="Description"
-                     type="description"
                      id="description"
                      name="description"
-                     [(ngModel)]="tvshow.description">
+                     [(ngModel)]="objectForm.description">
             </mat-form-field>
           </p>
 
@@ -30,9 +28,8 @@
             <mat-form-field>
               <input type="text"
                      matInput placeholder="Trailer URL"
-                     type="trailerURL"
                      name="url"
-                     [(ngModel)]="tvshow.url"
+                     [(ngModel)]="objectForm.url"
                      id="trailerURL">
             </mat-form-field>
           </p>
@@ -41,9 +38,8 @@
             <mat-form-field>
               <input type="text"
                      matInput placeholder="Genre"
-                     type="genre"
                      name="genre"
-                     [(ngModel)]="tvshow.genre"
+                     [(ngModel)]="objectForm.genre"
                      id="genre">
             </mat-form-field>
           </p>
@@ -52,31 +48,32 @@
             <mat-form-field>
               <input type="text"
                      matInput placeholder="Cover URL"
-                     type="coverURL"
                      name="picture"
-                     [(ngModel)]="tvshow.picture"
+                     [(ngModel)]="objectForm.picture"
                      id="coverURL">
             </mat-form-field>
           </p>
 
           <p>
-            <mat-form-field>
-              <input type="radio" id="movie" name="type" value="movie">
+            <mat-checkbox id="movie" name="type" value="movie">
               <label for="movie">Movie</label>
-
-              <input type="radio" id="tvshow" name="type" value="tvshow">
+            </mat-checkbox>
+          </p>
+          <p>
+            <mat-checkbox id="tvshow" name="type" value="tvshow">
               <label for="tvshow">TV Show</label><br>
-            </mat-form-field>
+            </mat-checkbox>
           </p>
 
           <div class="button">
 
 
-
-              <button type="submit" mat-raised-button  (click)="saveTvShow()">Post</button>
-            </div>
+            <button type="submit" mat-raised-button (click)="onSubmit()">Post</button>
+          </div>
           <p>
-            Don't have an account yet?  <a routerLink="/sign_up" style="text-align: right; text-decoration: none; color: #a32828;">Sign Up</a></p>
+            Don't have an account yet? <a routerLink="/sign_up"
+                                          style="text-align: right; text-decoration: none; color: #a32828;">Sign Up</a>
+          </p>
           <!-- <button type="submit" mat-stroked-button class="signup"  routerLink="/sign_up">Sign Up</button> -->
 
         </form>

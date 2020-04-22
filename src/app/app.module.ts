@@ -30,6 +30,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { TvshowComponent } from './tvshow/tvshow.component';
 import { FavButtonComponent } from './fav-button/fav-button.component';
 import { AdminComponent } from './admin/admin.component';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,8 @@ import { AdminComponent } from './admin/admin.component';
     MatTooltipModule,
     MatDialogModule,
     MatSnackBarModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCheckboxModule
   ],
   entryComponents: [
     DialogComponent,

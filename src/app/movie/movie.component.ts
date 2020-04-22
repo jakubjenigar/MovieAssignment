@@ -17,11 +17,11 @@ export class MovieComponent {
 
   constructor(
     public dialog: MatDialog,
-    public movieComponent: MoviesComponent
+    private movieService: MovieService
    ) {}
 
-  deleteAction(movie) {
-    this.movieComponent.deleteMovieById(movie.id);
+  deleteAction(id) {
+   this.movieService.deleteById(id).subscribe();
   }
 
   openDialog(movie): void {

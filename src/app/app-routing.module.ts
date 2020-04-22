@@ -7,7 +7,7 @@ import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-import {AdminComponent} from "./admin/admin.component";
+import {AdminComponent} from './admin/admin.component';
 
 
 const appRoutes: Routes = [
@@ -26,4 +26,4 @@ const appRoutes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [HomeComponent, TabBarNav, LoginComponent, SignupComponent, AboutComponent,ContactComponent];
+export const routingComponents = [HomeComponent, TabBarNav, LoginComponent, SignupComponent, AboutComponent, ContactComponent];

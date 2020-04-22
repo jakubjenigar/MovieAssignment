@@ -75,11 +75,11 @@ constructor(private http: HttpClient) {
 
 }
 
-getTvShows(){
+getTvShows() {
 return this.http.get(baseUrl);
 }
 
-createTvShow(data): Observable<TvShows>{
+createTvShow(data): Observable<TvShows> {
   return this.http.post<TvShows>(baseUrl, data);
 }
 

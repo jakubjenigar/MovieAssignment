@@ -1,47 +1,45 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {TvShowsService} from "../tvshows.service";
-import {FormControl, FormGroup} from "@angular/forms";
-import {MatInputModule} from "@angular/material/input";
+import {FormControl, FormGroup} from '@angular/forms';
+import { MoviesComponent } from '../movies/movies.component';
+import { MovieComponent } from '../movie/movie.component';
+import { Movie } from '../movie.model';
+import { MovieService } from '../movie.service';
+
 
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
   styleUrls: ['./admin.component.css'],
 })
+
+
+
 export class AdminComponent implements OnInit {
-  tvshow = {
-    title: "",
-    description: "",
-    url: "",
-    genre: "",
-    picture: ""
-  }
+  objectForm = {
+    title: '',
+    description: '',
+    url: '',
+    genre: '',
+    picture: ''
+  };
 
-  form: FormGroup = new FormGroup ({
-    title: new FormControl(''),
-    description: new FormControl(''),
-    url: new FormControl(''),
-    genre: new FormControl(''),
-    picture: new FormControl(''),
-  });
-  submitted = false;
-
-  constructor(private showService: TvShowsService) {
+  constructor(private movieService: MovieService) {
   }
 
   ngOnInit() {
+
   }
 
-  saveTvShow() {
-    const data = {
-      title: this.tvshow.title,
-      description: this.tvshow.description,
-      url: this.tvshow.url,
-      genre: this.tvshow.genre,
-      picture: this.tvshow.picture,
-    }
-    this.showService.createTvShow(data);
+  onSubmit(): void {
+     const data = {
+      Title: this.objectForm.title,
+      Description: this.objectForm.description,
+      Url: this.objectForm.url,
+      Genre: this.objectForm.genre,
+      Picture: this.objectForm.picture
+    };
 
+     this.movieService.addMovie(data).subscribe();
   }
 
 }
