@@ -1,7 +1,8 @@
 import {HttpHeaders, HttpClient} from '@angular/common/http';
 import {Observable, of} from 'rxjs';
 import {map, catchError, tap} from 'rxjs/operators';
-import {Injectable} from '@angular/core';
+import {Injectable} from "@angular/core"
+import {TvShows} from "./tvshows/tvshows.model";
 
 
 
@@ -76,6 +77,10 @@ constructor(private http: HttpClient) {
 
 getTvShows(){
 return this.http.get(baseUrl);
+}
+
+createTvShow(data): Observable<TvShows>{
+  return this.http.post<TvShows>(baseUrl, data);
 }
 
 }

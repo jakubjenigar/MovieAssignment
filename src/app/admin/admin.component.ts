@@ -1,5 +1,7 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {TvShowsService} from '../tvshows.service';
+import {TvShowsService} from "../tvshows.service";
+import {FormControl, FormGroup} from "@angular/forms";
+import {MatInputModule} from "@angular/material/input";
 
 @Component({
   selector: 'app-admin',
@@ -14,6 +16,14 @@ export class AdminComponent implements OnInit {
     genre: "",
     picture: ""
   }
+
+  form: FormGroup = new FormGroup ({
+    title: new FormControl(''),
+    description: new FormControl(''),
+    url: new FormControl(''),
+    genre: new FormControl(''),
+    picture: new FormControl(''),
+  });
   submitted = false;
 
   constructor(private showService: TvShowsService) {
@@ -30,6 +40,8 @@ export class AdminComponent implements OnInit {
       genre: this.tvshow.genre,
       picture: this.tvshow.picture,
     }
+    this.showService.createTvShow(data);
+
   }
 
 }
