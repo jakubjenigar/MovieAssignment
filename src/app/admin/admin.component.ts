@@ -5,14 +5,11 @@ import { MovieComponent } from '../movie/movie.component';
 import { Movie } from '../movie.model';
 import { MovieService } from '../movie.service';
 
-
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
   styleUrls: ['./admin.component.css'],
 })
-
-
 
 export class AdminComponent implements OnInit {
   objectForm = {
@@ -38,6 +35,7 @@ export class AdminComponent implements OnInit {
       Genre: this.objectForm.genre,
       Picture: this.objectForm.picture
     };
+
 
      this.movieService.addMovie(data).subscribe();
   }

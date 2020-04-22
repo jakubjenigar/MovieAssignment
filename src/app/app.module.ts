@@ -32,6 +32,7 @@ import { FavButtonComponent } from './fav-button/fav-button.component';
 import { AdminComponent } from './admin/admin.component';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -69,7 +70,9 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     MatDialogModule,
     MatSnackBarModule,
     HttpClientModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatDialogModule
+
   ],
   entryComponents: [
     DialogComponent,

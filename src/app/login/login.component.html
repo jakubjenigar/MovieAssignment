@@ -9,7 +9,7 @@
       <input type="text" matInput
       placeholder="Username"
       type="username"
-      [(ngModel)]="username"
+      [(ngModel)]="person.username"
       formControlName="username">
     </mat-form-field>
   </p>
@@ -19,19 +19,18 @@
       <input type="password"
       matInput placeholder="Password"
       type="password"
-      [(ngModel)]="password"
+      [(ngModel)]="person.password"
       formControlName="password">
     </mat-form-field>
   </p>
-  
+
   <p *ngIf="error" class="error">
     {{ error }}
   </p>
 
   <div class="button">
-   
-    
     <button type="submit" mat-raised-button  (click)="login()" matTooltip="Log in to your account"
+
     matTooltipShowDelay="1000"
     matTooltipHideDelay="500">Login</button>
   </div>
