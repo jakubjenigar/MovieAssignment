@@ -1,41 +1,37 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {Router} from "@angular/router";
-import {FormControl, FormGroup} from "@angular/forms";
+import {TvShowsService} from "../tvshows.service";
 
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
-  styleUrls: ['./admin.component.css']
+  styleUrls: ['./admin.component.css'],
+  providers: [TvShowsService]
 })
 export class AdminComponent implements OnInit {
-  title: string;
-  description: string;
-  titleURL:string;
-  genre:string;
-  coverURL: string;
-
-  post() {
-    if (this.form.valid) {
-      this.submitEM.emit(this.form.value);
-    }
+  tvshow = {
+    title: "",
+    description: "",
+    url: "",
+    genre: "",
+    picture: ""
   }
-  constructor(private router: Router) {}
+  submitted = false;
 
-  form: FormGroup = new FormGroup ({
-    title: new FormControl(''),
-    description: new FormControl(''),
-    titleURL: new FormControl(''),
-    genre: new FormControl(''),
-    coverURL: new FormControl('')
-  });
-
+  constructor(private showService: TvShowsService) {
+  }
 
   ngOnInit() {
   }
 
-  @Input() error: string | null;
-
-  @Output() submitEM = new EventEmitter();
+  saveTvShow() {
+    const data = {
+      title: this.tvshow.title,
+      description: this.tvshow.description,
+      url: this.tvshow.url,
+      genre: this.tvshow.genre,
+      picture: this.tvshow.picture,
+    }
+  }
 
 }
 

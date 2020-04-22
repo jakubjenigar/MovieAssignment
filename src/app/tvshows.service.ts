@@ -3,8 +3,6 @@ import {Observable, of} from 'rxjs';
 import {map, catchError, tap} from 'rxjs/operators';
 import {Injectable} from "@angular/core"
 
-
-
 const baseUrl= "http://localhost:8080/api/tvshows/"
 
 const httpOptions = {
@@ -76,6 +74,10 @@ constructor(private http: HttpClient) {
 
 getTvShows(){
 return this.http.get(baseUrl);
+}
+
+createTvShow(data){
+  return this.http.post(baseUrl, data);
 }
 
 }
