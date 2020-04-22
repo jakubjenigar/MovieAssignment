@@ -29,13 +29,8 @@ import { MatSnackBarModule } from '@angular/material';
 import { HttpClientModule } from '@angular/common/http';
 import { TvshowComponent } from './tvshow/tvshow.component';
 import { FavButtonComponent } from './fav-button/fav-button.component';
-<<<<<<< HEAD
-import { FavoritesComponent } from './favorites/favorites.component';
-
-=======
 import { AdminComponent } from './admin/admin.component';
 import {MatCheckboxModule} from '@angular/material/checkbox';
->>>>>>> ce807c0add718eb255e2b48c643cc31002e69ad7
 
 
 @NgModule({
@@ -53,12 +48,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     DialogComponent,
     TvshowComponent,
     FavButtonComponent,
-<<<<<<< HEAD
-    FavoritesComponent
-
-=======
     AdminComponent
->>>>>>> ce807c0add718eb255e2b48c643cc31002e69ad7
   ],
   imports: [
     BrowserModule,
@@ -80,12 +70,9 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     MatDialogModule,
     MatSnackBarModule,
     HttpClientModule,
-<<<<<<< HEAD
-=======
     MatCheckboxModule,
     MatDialogModule
 
->>>>>>> ce807c0add718eb255e2b48c643cc31002e69ad7
   ],
   entryComponents: [
     DialogComponent,

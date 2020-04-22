@@ -2,14 +2,10 @@ import { Component, Input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogComponent } from '../dialog/dialog.component';
 import { MoviesComponent } from '../movies/movies.component';
-<<<<<<< HEAD
-import { MovieService } from '../movie.service';
-=======
 import { MovieService } from './../movie.service';
 import { Movie } from '../movie.model';
 
 
->>>>>>> ce807c0add718eb255e2b48c643cc31002e69ad7
 @Component({
   selector: 'app-movie',
   templateUrl: './movie.component.html',
