@@ -16,16 +16,12 @@ export class TvshowComponent {
     public dialog: MatDialog,
     tvshowsComponent: TvshowsComponent) {
 
-    this.tvshows = tvshowsComponent.getSeries();
   }
 
-  getSeries() {
-    return this.tvshows;
-  }
 
   openDialog(serie): void {
     const dialogRef = this.dialog.open(DialogComponent, {
-      data: {myVar: serie.trailer, myTitle: serie.title},
+      data: {myVar: serie.Url, myTitle: serie.Title},
       hasBackdrop: true,
       backdropClass: 'dialogBackdrop',
       panelClass: 'custom-dialog-container'
