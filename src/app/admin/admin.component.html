@@ -3,14 +3,14 @@
     <mat-card>
       <mat-card-title>Admin tools</mat-card-title>
       <mat-card-content>
-        <form (ngSubmit)="saveTvShow()">
+        <form >
           <p>
             <mat-form-field>
               <input type="text" matInput
                      placeholder="Title"
                      id="title"
                      name="title"
-                     [(ngModel)]="tvshow.title">
+                     [(ngModel)]="objectForm.title">
             </mat-form-field>
           </p>
 
@@ -20,7 +20,7 @@
                      matInput placeholder="Description"
                      id="description"
                      name="description"
-                     [(ngModel)]="tvshow.description">
+                     [(ngModel)]="objectForm.description">
             </mat-form-field>
           </p>
 
@@ -29,7 +29,7 @@
               <input type="text"
                      matInput placeholder="Trailer URL"
                      name="url"
-                     [(ngModel)]="tvshow.url"
+                     [(ngModel)]="objectForm.url"
                      id="trailerURL">
             </mat-form-field>
           </p>
@@ -39,7 +39,7 @@
               <input type="text"
                      matInput placeholder="Genre"
                      name="genre"
-                     [(ngModel)]="tvshow.genre"
+                     [(ngModel)]="objectForm.genre"
                      id="genre">
             </mat-form-field>
           </p>
@@ -49,7 +49,7 @@
               <input type="text"
                      matInput placeholder="Cover URL"
                      name="picture"
-                     [(ngModel)]="tvshow.picture"
+                     [(ngModel)]="objectForm.picture"
                      id="coverURL">
             </mat-form-field>
           </p>
@@ -67,8 +67,9 @@
 
           <div class="button">
 
+            <button type="submit" mat-raised-button (click)="onSubmit()">Post</button>
 
-            <button type="submit" mat-raised-button (click)="saveTvShow()">Post</button>
+
           </div>
           <p>
             Don't have an account yet? <a routerLink="/sign_up"
