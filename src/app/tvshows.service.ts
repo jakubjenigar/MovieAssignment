@@ -78,6 +78,7 @@ return this.http.get(baseUrl);
 }
 
 createTvShow(data): Observable<TvShows>{
+  console.log("create got here")
   return this.http.post<TvShows>(baseUrl, data);
 }
 

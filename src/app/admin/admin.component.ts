@@ -1,7 +1,9 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {TvShowsService} from "../tvshows.service";
 import {FormControl, FormGroup} from "@angular/forms";
+import {TvShows} from "../tvshows/tvshows.model";
 import {MatInputModule} from "@angular/material/input";
+import {MatFormFieldControl} from "@angular/material/form-field";
 
 @Component({
   selector: 'app-admin',
@@ -9,13 +11,7 @@ import {MatInputModule} from "@angular/material/input";
   styleUrls: ['./admin.component.css'],
 })
 export class AdminComponent implements OnInit {
-  tvshow = {
-    title: "",
-    description: "",
-    url: "",
-    genre: "",
-    picture: ""
-  }
+tvshow : TvShows;
 
   form: FormGroup = new FormGroup ({
     title: new FormControl(''),
@@ -40,6 +36,7 @@ export class AdminComponent implements OnInit {
       genre: this.tvshow.genre,
       picture: this.tvshow.picture,
     }
+    console.log("got here");
     this.showService.createTvShow(data);
 
   }
