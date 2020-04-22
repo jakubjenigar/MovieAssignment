@@ -2,6 +2,7 @@ import {HttpHeaders, HttpClient} from "@angular/common/http";
 import {Observable, of} from 'rxjs';
 import {map, catchError, tap} from 'rxjs/operators';
 import {Injectable} from "@angular/core"
+import {TvShows} from "./tvshows/tvshows.model";
 
 const baseUrl= "http://localhost:8080/api/tvshows/"
 
@@ -76,8 +77,8 @@ getTvShows(){
 return this.http.get(baseUrl);
 }
 
-createTvShow(data){
-  return this.http.post(baseUrl, data);
+createTvShow(data): Observable<TvShows>{
+  return this.http.post<TvShows>(baseUrl, data);
 }
 
 }

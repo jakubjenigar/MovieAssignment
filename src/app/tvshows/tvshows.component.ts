@@ -19,4 +19,5 @@ export class TvshowsComponent implements OnInit {
   TvShowObservable.subscribe((ShowsData: TvShows[]) => {this.tvShows = ShowsData});
   }
 
+
 }
