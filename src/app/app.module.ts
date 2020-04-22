@@ -69,7 +69,8 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
     MatDialogModule,
     MatSnackBarModule,
     HttpClientModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatDialogModule
   ],
   entryComponents: [
     DialogComponent,
