@@ -1,0 +1,84 @@
+<div class="admin">
+  <div class="adminCard">
+    <mat-card>
+      <mat-card-title>Admin tools</mat-card-title>
+      <mat-card-content>
+        <form >
+          <p>
+            <mat-form-field>
+              <input type="text" matInput
+                     placeholder="Title"
+                     id="title"
+                     name="title"
+                     [(ngModel)]="objectForm.title">
+            </mat-form-field>
+          </p>
+
+          <p>
+            <mat-form-field>
+              <input type="text"
+                     matInput placeholder="Description"
+                     id="description"
+                     name="description"
+                     [(ngModel)]="objectForm.description">
+            </mat-form-field>
+          </p>
+
+          <p>
+            <mat-form-field>
+              <input type="text"
+                     matInput placeholder="Trailer URL"
+                     name="url"
+                     [(ngModel)]="objectForm.url"
+                     id="trailerURL">
+            </mat-form-field>
+          </p>
+
+          <p>
+            <mat-form-field>
+              <input type="text"
+                     matInput placeholder="Genre"
+                     name="genre"
+                     [(ngModel)]="objectForm.genre"
+                     id="genre">
+            </mat-form-field>
+          </p>
+
+          <p>
+            <mat-form-field>
+              <input type="text"
+                     matInput placeholder="Cover URL"
+                     name="picture"
+                     [(ngModel)]="objectForm.picture"
+                     id="coverURL">
+            </mat-form-field>
+          </p>
+
+          <p>
+            <mat-checkbox id="movie" name="type" value="movie">
+              <label for="movie">Movie</label>
+            </mat-checkbox>
+          </p>
+          <p>
+            <mat-checkbox id="tvshow" name="type" value="tvshow">
+              <label for="tvshow">TV Show</label><br>
+            </mat-checkbox>
+          </p>
+
+          <div class="button">
+
+            <button type="submit" mat-raised-button (click)="onSubmit()">Post</button>
+
+
+          </div>
+          <p>
+            Don't have an account yet? <a routerLink="/sign_up"
+                                          style="text-align: right; text-decoration: none; color: #a32828;">Sign Up</a>
+          </p>
+          <!-- <button type="submit" mat-stroked-button class="signup"  routerLink="/sign_up">Sign Up</button> -->
+
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

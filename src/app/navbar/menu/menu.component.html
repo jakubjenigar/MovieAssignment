@@ -1,26 +1,25 @@
 <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
     <mat-icon>menu</mat-icon>
-     
+
   </button>
   <mat-menu #menu="matMenu">
-      
+
+    <button mat-menu-item routerLink="/log_in">
+      <mat-icon class="menu-icon">person</mat-icon>
+      Log in
+    </button>
+    <button mat-menu-item routerLink="/sign_up">
+      <mat-icon class="menu-icon">person_add</mat-icon>
+      Sign up
+    </button>
+
+
     <!-- <button mat-menu-item routerLink="/">
         <mat-icon class="menu-icon">home</mat-icon>
         <span>Home</span>
       </button> -->
-    
-    <button mat-menu-item routerLink="/browse">
-    
-      <mat-icon class="menu-icon">view_module</mat-icon>
-      <span>Browse</span>
-   
-    </button>
-    
-    <button mat-menu-item routerLink="/about">
-      <mat-icon class="menu-icon">play_circle_filled</mat-icon>
-      <span>About</span>
-    </button>
 
+<<<<<<< HEAD
     <button mat-menu-item routerLink="/contact">
         <mat-icon class="menu-icon">help</mat-icon>
         <span>Contact</span>
@@ -31,6 +30,23 @@
         <span>Favorites</span>
       </button>
 
+=======
+<!--    <button mat-menu-item routerLink="/browse">-->
+<!--    -->
+<!--      <mat-icon class="menu-icon">view_module</mat-icon>-->
+<!--      <span>Browse</span>-->
+<!--   -->
+<!--    </button>-->
+<!--    -->
+<!--    <button mat-menu-item routerLink="/about">-->
+<!--      <mat-icon class="menu-icon">play_circle_filled</mat-icon>-->
+<!--      <span>About</span>-->
+<!--    </button>-->
+
+<!--    <button mat-menu-item routerLink="/contact">-->
+<!--        <mat-icon class="menu-icon">help</mat-icon>-->
+<!--        <span>Contact</span>-->
+<!--      </button>-->
+>>>>>>> ce807c0add718eb255e2b48c643cc31002e69ad7
 </mat-menu>
 
-  

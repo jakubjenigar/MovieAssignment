@@ -1,0 +1,95 @@
+:host {
+  display: flex;
+  justify-content: left;
+  margin: 100px 50px;
+}
+
+.mat-form-field {
+  width: 100%;
+  min-width: 300px;
+}
+
+mat-card-title {
+  display: flex;
+  justify-content: left;
+  background-color: #212121;
+  color: #ffffff;
+}
+
+mat-card-content {
+  display: flex;
+  justify-content: center;
+  background-color: #212121;
+  color: #ffffff;
+}
+
+mat-card {
+  background-color: #212121;
+  border-radius: 10px;
+}
+
+.mat-input-element {
+  caret-color: #baa3a3;
+}
+
+
+::ng-deep.mat-form-field-ripple {
+  /*change color of underline when focused*/
+  background-color: #baa3a3 !important;
+;
+}
+
+::ng-deep .mat-form-field-label {
+  /*change color of label*/
+  color: #ffffff !important;
+  font: inherit;
+}
+
+/* Change label color on focused */
+::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+  color: #baa3a3 !important;
+}
+
+.error {
+  padding: 16px;
+  width: 300px;
+  color: white;
+  background-color: red;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12pt;
+
+}
+
+.mat-raised-button{
+  background-color: #a32828 ;
+  color: #d6c9c9;
+}
+
+.mat-stroked-button{
+  border-color: #d6c9c9;
+  color: #d6c9c9;
+  margin-right: 10px;
+
+}
+
+button:hover {
+  color: #ffffff;
+
+}
+
+.welcomeText{
+  float: right;
+  padding: 5rem;
+  padding-top: 0;
+}
+h1{
+  font-size: 500%;
+}
+
+.admin{
+  float: left;
+}

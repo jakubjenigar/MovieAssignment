@@ -1,18 +1,18 @@
 <div class="grid">
 
-    <mat-card *ngFor="let tvshow of tvshows">
+    <mat-card *ngFor="let tvshow of data">
 
-      <mat-card-title> {{ tvshow.title }} </mat-card-title>
-      <mat-card-subtitle> {{ tvshow.genre }} </mat-card-subtitle>
+      <mat-card-title> {{ tvshow.Title }} </mat-card-title>
+      <mat-card-subtitle> {{ tvshow.Genre }} </mat-card-subtitle>
 
-    <img mat-card-image src="{{ tvshow.photo }}"
+    <img mat-card-image src="{{ tvshow.Picture }}"
     class="image"
     style="width: 100%; height: 100%; max-width: 500px; max-height: 250px;">
 
     <mat-card-content>
         Description:
       <br>
-       {{ tvshow.description }}
+       {{ tvshow.Description }}
     </mat-card-content>
 
     <mat-card-actions>
