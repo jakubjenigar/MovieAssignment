@@ -2,22 +2,26 @@ import { Component, Input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogComponent } from '../dialog/dialog.component';
 import { MoviesComponent } from '../movies/movies.component';
+import { MovieService } from './../movie.service';
+import { Movie } from '../movie.model';
+
+
 @Component({
   selector: 'app-movie',
   templateUrl: './movie.component.html',
-  styleUrls: ['./movie.component.css'],
+  styleUrls: ['./movie.component.css']
 })
 
 export class MovieComponent {
   @Input() data;
-  movies;
-
 
   constructor(
     public dialog: MatDialog,
-    movieComponent: MoviesComponent) {
+    public movieComponent: MoviesComponent
+   ) {}
 
-    // this.movies = movieComponent.getMovies();
+  deleteAction(movie) {
+    this.movieComponent.deleteMovieById(movie.id);
   }
 
   openDialog(movie): void {

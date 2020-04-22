@@ -1,7 +1,8 @@
 import { MovieService } from './../movie.service';
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+
 import {Movie} from '../movie.model';
+import { Observable } from 'rxjs';
 @Component({
   selector: 'app-movies',
   templateUrl: './movies.component.html',
@@ -10,6 +11,7 @@ import {Movie} from '../movie.model';
 })
 export class MoviesComponent implements OnInit {
   movies: Movie[] = [];
+
 
   constructor(private movieService: MovieService) {
   }
@@ -21,4 +23,21 @@ export class MoviesComponent implements OnInit {
      }
      );
   }
+
+  deleteMovie() {
+    this.movieService.delete()
+    .subscribe();
+    setTimeout(() => window.location.reload(), 1000);
+  }
+
+  public deleteMovieById(id) {
+    this.movieService.deleteById(id)
+    .subscribe();
+    setTimeout(() => window.location.reload(), 1000);
+  }
+
+  public addMovie(movie: Movie) {
+    this.movieService.addMovie(movie).subscribe();
+  }
+
 }

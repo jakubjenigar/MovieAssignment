@@ -16,6 +16,9 @@
   </mat-card-content>
 
     <mat-card-actions>
+      <button mat-raised-button matTooltio="Delete movie"
+        matTooltipShowDelay="1000"
+        matTooltipHideDelay="500" (click)="deleteAction(movie)">Delete</button>
       <app-fav-button></app-fav-button>
       <button mat-raised-button matTooltip="Watch trailer"
         matTooltipShowDelay="1000"

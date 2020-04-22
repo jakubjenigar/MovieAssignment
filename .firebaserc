@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "playmovie-e3d09"
+    "default": "watchit-d7704",
+    "staging": "watchit-d7704"
   }
 }
