@@ -1,45 +1,68 @@
-import { Input, Component, Output, EventEmitter } from '@angular/core';
+import { Input, Component, Output, EventEmitter, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
-import {Router} from '@angular/router';
+import { Router } from '@angular/router';
 import { MatSnackBar } from '@angular/material';
-
+import { PersonService } from '../services/person.service';
 @Component({
   selector: 'signup',
   templateUrl: './signup.component.html',
   styleUrls: ['./signup.component.css']
 })
 
-export class SignupComponent {
-  username: string;
-  password: string;
-  email: string;
+export class SignupComponent implements OnInit {
+  person = {
+    fullname: '',
+    username: '',
+    password: '',
+    email: '',
+    submited: false
+  };
 
-    form: FormGroup = new FormGroup ({
+  form: FormGroup = new FormGroup ({
+    fullname: new FormControl(''),
     username: new FormControl(''),
     password: new FormControl(''),
-    email: new FormControl('')
+    email: new FormControl(''),
   });
 
-  constructor(private router: Router, private snackBar: MatSnackBar,) {}
   submit() {
     if (this.form.valid) {
       this.submitEM.emit(this.form.value);
     }
   }
 
+  ngOnInit() {}
+  constructor(
+    private personService: PersonService,
+    private router: Router,
+    private snackBar: MatSnackBar) {}
+
   signup() {
-    username: document.getElementById('username');
-    password: document.getElementById('password');
-    email: document.getElementById('email');
-
-    if (this.username !== undefined && this.password !== undefined && this.email !== undefined) {
-    this.router.navigate(['log_in'], {state: {data: {username: this.username, password: this.password}}});
-    } else {
-      this.snackBar.open('Please fill out all the fields', 'Dismiss');;
-    }
+    const data = {
+      fullname: this.person.fullname,
+      username: this.person.username,
+      password: this.person.password,
+      email: this.person.email
+    };
+    console.log(data);
+    if (data.fullname !== '' && data.username !== ''
+      && data.password !== '' && data.email !== ''
+      ) {
+        this.personService.create(data).subscribe(
+          response => {
+            console.log(response);
+            this.person.submited = true;
+            this.snackBar.open('Succesfully created account', 'Dismiss');
+            this.router.navigate(['log_in']);
+          },
+          error => {
+            console.log(error);
+          }
+          );
+      } else {
+        this.snackBar.open('Please fill out all the fields', 'Dismiss');
+      }
   }
-
-
 
   @Input() error: string | null;
 

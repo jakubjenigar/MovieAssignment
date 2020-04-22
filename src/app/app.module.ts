@@ -65,7 +65,8 @@ import { FavButtonComponent } from './fav-button/fav-button.component';
     MatTooltipModule,
     MatDialogModule,
     MatSnackBarModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDialogModule
   ],
   entryComponents: [
     DialogComponent,
