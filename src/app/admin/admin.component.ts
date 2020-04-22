@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {TvShowsService} from "../tvshows.service";
+import {TvShowsService} from '../tvshows.service';
 
 @Component({
   selector: 'app-admin',
